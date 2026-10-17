@@ -234,9 +234,9 @@ const CONCERNS = [
 function defaultState(){
   return {
     medications: [],
-    adherence: {},   // { 'YYYY-MM-DD': { medId: 'taken'|'skipped' } }
-    metabolic: {},   // { 'YYYY-MM-DD': { sleep, sleepQuality, screen, walk } }
-    emotions: {},    // { 'YYYY-MM-DD': { mood, eatTrigger, note } }
+    adherence: {},
+    metabolic: {},
+    emotions: {},
     questionnaire: {},
     includeInSummary: {
       medications: true,
@@ -244,11 +244,11 @@ function defaultState(){
       emotions:    true,
       questionnaire: true
     },
-    currentView: 'today'
-assistant: {
-  messages: [],
-  contextAllowed: false
-},
+    currentView: 'today',
+    assistant: {
+      messages: [],
+      contextAllowed: false
+    }
   };
 }
 
